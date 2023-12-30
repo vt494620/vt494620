@@ -1,0 +1,11 @@
+###data class personne(val nom:String,val age:Int
+)
+fun main(){
+    val personne=personne("jean",30)
+    println(personne.nom)
+    println(personne.age)
+    val personneModifier =personne.copy(nom="Marie")
+    val personne1Modifier =personne.copy(age=12)
+    println(personneModifier.nom)
+    println(personne1Modifier.age)
+}
