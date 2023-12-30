@@ -1,0 +1,23 @@
+fun main(){
+    val chien=Chien("chien de race")
+    val color:String="red"
+    chien.afficher()
+}
+open class Animal (val name: String){
+    open fun afficher(){
+        println("Mon nom d'animal est $name")
+        val color = "red"
+        println("la couleur de  l'animal est $color")
+        
+    }
+}
+interface Action{
+    fun afficher()
+}
+class Chien(name: String):Animal(name){
+    override fun afficher() {
+        println("Mon nom de chien est $name")
+        val color="red"
+        println("la couleur de  l'animal est $color")
+    }
+}
