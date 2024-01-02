@@ -1,7 +1,7 @@
 ###data class personne(val nom:String,val age:Int
 )
 fun main(){
-    val personne=personne("jean",30)
+    val personne=personne("jean",40)
     println(personne.nom)
     println(personne.age)
     val personneModifier =personne.copy(nom="Marie")
